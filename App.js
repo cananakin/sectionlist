@@ -9,6 +9,9 @@ import Header from './components/Layout/Header';
 import SectionListContainer from './containers/SectionListContainer';
 import AddData from './containers/Form';
 
+// bugs
+import Bug from './bugs/4';
+
 const INITIAL_DATA = [
     {
         title: 'Verb',
@@ -63,6 +66,7 @@ class App extends Component {
 		return (
 			<View style={styles.container}>
 				<Header />
+				<Bug />
 				{ !showForm ? 
 					<Aux>
 						<TouchableOpacity style={styles.button} onPress={this.showFormHandler} >
